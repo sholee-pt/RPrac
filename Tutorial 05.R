@@ -1,4 +1,5 @@
 factor(x = character(), levels, labels = levels, ordered = is.ordered(x))
+#factor: 범주형 데이터를 나타내는 data type
 #x: data의 vector로, double이 아닌 String 혹은 integer이어야 함
 #Level: x가 가질 수 있는 가능한 값의 vector이며 default는 vector x의 각 항목들의 단일값 목록임
 
