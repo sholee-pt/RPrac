@@ -70,6 +70,7 @@ data_frame$c1_norm_function <- normalize(data_frame$c1)
 data_frame$c2_norm_function <- normalize(data_frame$c2)
 data_frame$c3_norm_function <- normalize(data_frame$c3)
 
+#data frame을 train data와 test data로 분할하는 function
 split_data <- function(df, train = TRUE) {
   length <- nrow(df)
   total_row <- length*0.8
@@ -83,7 +84,7 @@ split_data <- function(df, train = TRUE) {
   }
 }
 #df: data set 정의
-#train: 함수가 train data 혹은 test data를 반환할지를 지정, default는 TRUE로 지정
+#train: 함수가 train data 혹은 test data를 반환할지를 지정, default는 TRUE
 
 train <- split_data(airquality, train = TRUE)
 dim(train)
